@@ -15,7 +15,16 @@ class Counter extends React.Component {
     console.log('componente foi montado """check"""');
   }
 
+  UNSAFE_componentWillUpdate() {
+    console.log("atualizado1");
+  }
+
+  componentDidUpdate() {
+    console.log("componente counter foi atualizado!!!!!");
+  }
+
   render() {
+    console.log("atualizado2");
     return (
       <div>
         <h1>{this.state.contador}</h1>
