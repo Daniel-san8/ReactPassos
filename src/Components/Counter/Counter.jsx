@@ -6,6 +6,10 @@ class Counter extends React.Component {
     console.log("opa");
   }
 
+  UNSAFE_componentWillMount() {
+    console.log("o nosso componente contador será montado");
+  }
+
   render() {
     return (
       <div>
