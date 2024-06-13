@@ -23,6 +23,10 @@ class Counter extends React.Component {
     console.log("componente counter foi atualizado!!!!!");
   }
 
+  shouldComponentUpdate() {
+    return true;
+  }
+
   render() {
     console.log("atualizado2");
     return (
