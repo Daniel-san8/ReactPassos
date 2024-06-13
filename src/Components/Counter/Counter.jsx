@@ -19,8 +19,24 @@ class Counter extends React.Component {
     return (
       <div>
         <h1>{this.state.contador}</h1>
-        <button>diminuir</button>
-        <button>aumentar</button>
+        <button
+          onClick={() => {
+            {
+              this.setState({ contador: this.state.contador - 1 });
+            }
+          }}
+        >
+          diminuir
+        </button>
+        <button
+          onClick={() => {
+            {
+              this.setState({ contador: this.state.contador + 1 });
+            }
+          }}
+        >
+          aumentar
+        </button>
       </div>
     );
   }
